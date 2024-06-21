@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"
+        ><img
+          id="logo"
+          src="https://plus.unsplash.com/premium_photo-1673326679548-962d2fe77423?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="logo"
+        />
+        <div class="userInfo">
+          <h4 id="info">
+            <script>
+              document.write(localStorage.getItem("currUser"));
+            </script>
+          </h4>
+        </div>
+      </a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="profile.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <button onclick="logout()">Logout</button>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+    <section id="hero">
+      <h4>Trade-in-offer</h4>
+      <h2>Super-value-deals</h2>
+      <h1>On all products</h1>
+      <button>Shop Now</button>
+    </section>
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1678283974882-a00a67c542a9?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+        />
+        <h5>free Shipping</h5>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://images.unsplash.com/photo-1571867424488-4565932edb41?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+        />
+        <h5>Online Order</h5>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1668014841047-faa7ab6ae9cb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+        />
+        <h5>Money saving</h5>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1673977134085-a14d9a36b87e?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+        />
+        <h5>Sales</h5>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1674595876793-3d81c1debada?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+        />
+        <h5>Support</h5>
+      </div>
+      <div class="fe-box">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1664201890468-74a27ce2ce31?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+        />
+        <h5>Shop</h5>
+      </div>
+    </section>
+    <section id="product1" class="section-p1">
+      <h2>Featured Product</h2>
+      <p>Collections of clothes</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1673356302067-aac3b545a362?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+          <div class="des">
+            <h5>T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+    <footer class="section-p1">
+      <div class="col">
+        <img
+          class="logo"
+          src="https://plus.unsplash.com/premium_photo-1673326679548-962d2fe77423?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="lofo"
+        />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>24 knot California</p>
+        <p><strong>Phone:</strong>+22-333658-85554</p>
+        <p><strong>Hours:</strong>10:00 - 18:00, Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact us</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">SignIn</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Whistlist</a>
+        <a href="#">Track my Order</a>
+      </div>
+      <div class="col install">
+        <h4>Install</h4>
+        <p>From App store or Google Play</p>
+        <div class="row">
+          <img
+            src="https://th.bing.com/th/id/OIP.IvXLJosM3MGUNp8sX_y37gHaC9?rs=1&pid=ImgDetMain"
+            alt="apple"
+          />
+          <img
+            src="https://www.pngall.com/wp-content/uploads/10/Google-Play-Logo-PNG-Photos.png"
+            alt="android"
+          />
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>2015, All copy rights reserved</p>
+    </div>
+  </body>
+  <script src="/js/profile.js"></script>
+</html>

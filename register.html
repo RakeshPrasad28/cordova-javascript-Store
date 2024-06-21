@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="/css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div style="width: 100%;display: flex;align-items: center;justify-content: center;height: 100vh;">
+      <div
+        class="content"
+        style="margin: auto;display: flex;flex-direction: column;align-items: center;padding: 2vw;"
+      >
+        <h1 style="text-align: center; margin-bottom: 2vw">Register</h1>
+        <form onsubmit="validateForm()" style="display: flex;flex-direction: column;align-items: center;border: 1px solid black;padding: 65px 25px;">
+          <div class="mb-3">
+            <label for="inputEmail1" style="font-size: 1.5vw;"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail1"
+              name="inputEmail1"
+              aria-describedby="emailHelp"
+              style="width: 25vw;background-color: transparent;border: 1px solid black;"
+            />
+            <div id="emailHelp" style="font-size: 1.2vw;">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div>
+            <label for="inputUsername" style="font-size: 1.5vw;">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputUsername"
+              name="inputUsername"
+              style="width: 25vw;background-color: transparent;border: 1px solid black"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword1" style="font-size: 1.5vw;"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword1"
+              name="inputPassword1"
+              style="width: 25vw;background-color: transparent;border: 1px solid black"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="font-size: 1.2vw;width: 25vw">
+            Submit
+          </button>
+        </form>
+        <h6 class="mt-3" style="font-size: 1.5vw;width: 22vw;" onclick="signIn()">
+          already a member? <span style="cursor: pointer">SignIn</span>
+        </h6>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/register.js"></script>
+  </body>
+</html>
